@@ -99,18 +99,26 @@
         <button class="continue-button" onclick="showMessage()">Continue</button>
         <div class="message-container hidden" id="message-container">
             <p>Forever starts with just one word...</p>
-            <button class="yes-button" onclick="showCelebration()">Yes</button>
+            <button class="yes-button" onclick="showNextStep()">Yes</button>
         </div>
     </div>
     <div class="celebration hidden" id="celebration">
-        💐💍🎉 I knew U'd click yess! 🎉💍💐
+        💐💍🎉 I knew you'd click yes! 🎉💍💐
+        <p>Do you want to know what I think about you?</p>
+        <button class="yes-button" onclick="showLoveMessage()">Yes</button>
+    </div>
+    <div class="celebration hidden" id="love-message">
+        <p>You are the most beautiful person inside and out. Your smile lights up my world. I love every little thing about you, including your cute tantrums! I want to cherish and love you for the rest of our lives. I am so grateful to have you, and I want nothing more than to spend forever with you. Happy anniversary dear❤️</p>
     </div>
     <script>
         function showMessage() {
             document.getElementById('message-container').classList.remove('hidden');
         }
-        function showCelebration() {
+        function showNextStep() {
             document.getElementById('celebration').classList.remove('hidden');
+        }
+        function showLoveMessage() {
+            document.getElementById('love-message').classList.remove('hidden');
         }
     </script>
 </body>
